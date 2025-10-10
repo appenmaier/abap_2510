@@ -1,5 +1,5 @@
 CLASS zcl_00_airplane DEFINITION
-  PUBLIC
+  PUBLIC ABSTRACT
   CREATE PUBLIC.
 
   PUBLIC SECTION.
@@ -11,7 +11,7 @@ CLASS zcl_00_airplane DEFINITION
     METHODS constructor IMPORTING !name      TYPE string
                                   plane_type TYPE string.
 
-    METHODS to_string RETURNING VALUE(string) TYPE string.
+    METHODS to_string ABSTRACT RETURNING VALUE(string) TYPE string.
 
   PRIVATE SECTION.
 
@@ -24,9 +24,5 @@ CLASS zcl_00_airplane IMPLEMENTATION.
     me->plane_type = plane_type.
 
     number_of_airplanes += 1.
-  ENDMETHOD.
-
-  METHOD to_string.
-    string = |{ name } ({ plane_type })|.
   ENDMETHOD.
 ENDCLASS.
