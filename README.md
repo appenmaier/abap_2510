@@ -15,5 +15,7 @@
 
 ## Teil 2: Grundlagen ABAP CDS
 
+- [ABAP CDS](docs/abap-cds.md)
+- [Joins](docs/joins.md)
 
 ## Teil 3: Grundlagen RAP
