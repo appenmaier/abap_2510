@@ -16,6 +16,7 @@
 ## Teil 2: Grundlagen ABAP CDS
 
 - [ABAP CDS](docs/abap-cds.md)
-- [Joins](docs/joins.md)
+- [Joins und Union](docs/joins-and-unions.md)
+- [Berechtigungsprüfungen](authority-check.md)
 
 ## Teil 3: Grundlagen RAP
